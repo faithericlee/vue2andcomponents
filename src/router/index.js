@@ -1,22 +1,31 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Index from '../views/Index.vue'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: Home
+    name: 'index',
+    component: Index
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/cookies',
+    name: 'cookies',
+    component: resolve => require(['../views/Cookies.vue'], resolve),
+  },
+  {
+    path: '/edit',
+    name: 'edit',
+    component: resolve => require(['../views/Edit.vue'], resolve),
+  },
+  {
+    path: '/highlightjs',
+    name: 'highlightjs',
+    component: resolve => require(['../views/Highlightjs.vue'], resolve),
   }
 ]
 
@@ -24,6 +33,15 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  NProgress.start()
+  next()
+})
+
+router.afterEach(() => {
+  NProgress.done()
 })
 
 export default router

@@ -1,19 +1,35 @@
-# vue2andcomponents
+---
 
-## Project setup
-```
-npm install
-```
+vue2和各类js组件示例
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+---
 
-### Compiles and minifies for production
-```
-npm run build
-```
+[TOC]
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+---
+
+# components
+
+## [NProgress](http://ricostacruz.com/nprogress/) 
+
+Perfect for Turbolinks, Pjax, and other Ajax-heavy apps.
+
+示例：./router/index.js
+
+## [js-cookie](https://www.npmjs.com/package/js-cookie)
+
+A simple, lightweight JavaScript API for handling cookies
+
+示例：./views/Cookies.vue
+
+## [Normalize.css](http://necolas.github.io/normalize.css/)
+
+A modern, HTML5-ready alternative to CSS resets
+
+只需要在main.js中引入，根据需要覆盖normalize.css中的方法
+
+## [highlightjs](https://highlightjs.org/)
+
+hightlightjs和vue-highlightjs配合使用
+
+示例：./views/Highlightjs.vue
