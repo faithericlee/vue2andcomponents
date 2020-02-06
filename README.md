@@ -33,3 +33,7 @@ A modern, HTML5-ready alternative to CSS resets
 hightlightjs和vue-highlightjs配合使用
 
 示例：./views/Highlightjs.vue
+
+## [Clipboardjs](http://www.clipboardjs.cn/)
+
+示例：./views/Clipboardjs.vue

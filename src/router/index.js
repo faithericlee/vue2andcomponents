@@ -26,6 +26,11 @@ const routes = [
     path: '/highlightjs',
     name: 'highlightjs',
     component: resolve => require(['../views/Highlightjs.vue'], resolve),
+  },
+  {
+    path: '/clipboardjs',
+    name: 'clipboardjs',
+    component: resolve => require(['../views/Clipboardjs.vue'], resolve),
   }
 ]
 
