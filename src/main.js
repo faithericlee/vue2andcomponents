@@ -7,6 +7,8 @@ import 'mavon-editor/dist/css/index.css'
 import 'normalize.css/normalize.css'
 import VueHighlightJS from 'vue-highlightjs'
 import 'highlight.js/styles/atom-one-dark.css'
+import '@/components/SvgIcon/index.js'
+
 Vue.config.productionTip = false
 
 //全局注册使用mavonEditor

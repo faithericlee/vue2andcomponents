@@ -37,3 +37,8 @@ hightlightjs和vue-highlightjs配合使用
 ## [Clipboardjs](http://www.clipboardjs.cn/)
 
 示例：./views/Clipboardjs.vue
+
+## [SvgIcon]
+
+参考:[vue中封装svg-icon组件并使用](https://www.cnblogs.com/lhjfly/p/10756650.html)
+

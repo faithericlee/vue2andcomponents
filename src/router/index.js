@@ -31,6 +31,11 @@ const routes = [
     path: '/clipboardjs',
     name: 'clipboardjs',
     component: resolve => require(['../views/Clipboardjs.vue'], resolve),
+  },
+  {
+    path: '/svgicon',
+    name: 'svgicon',
+    component: resolve => require(['../views/SvgIcon.vue'], resolve),
   }
 ]
 
